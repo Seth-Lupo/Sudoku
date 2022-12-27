@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="692.0" style="-fx-background-color: rgb(250, 240, 230);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lupo.sudoku.GUIController">
+   <children>
+      <Label layoutX="149.0" layoutY="-32.0" prefHeight="111.0" prefWidth="185.0" text="Mundo's Sudoku">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </Label>
+      <Line endX="100.0" layoutX="242.0" layoutY="249.0" rotate="90.0" scaleX="1.8" startX="-100.0" stroke="#8f440a58" strokeLineCap="BUTT" strokeWidth="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="67.0" layoutX="275.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="198.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="111.0" layoutX="305.0" layoutY="304.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="170.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="63.0" layoutX="12.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="198.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="18.0" layoutY="62.0" prefHeight="67.0" prefWidth="185.0" text="# of Empty Boxes">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="60.0" prefHeight="67.0" prefWidth="185.0" text="Cheating Settings">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emptyBoxInput" layoutX="17.0" layoutY="196.0" prefHeight="63.0" prefWidth="153.0">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="17.0" layoutY="129.0" prefHeight="67.0" prefWidth="185.0" text="Enter Here...">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="cheatingOnInput" layoutX="322.0" layoutY="154.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="134.0" text="On">
+         <toggleGroup>
+            <ToggleGroup fx:id="cheating" />
+         </toggleGroup>
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="cheatingDisabledInput" layoutX="323.0" layoutY="215.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="134.0" text="Disabled" toggleGroup="$cheating">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </RadioButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="125.0" layoutX="9.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="464.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="111.0" layoutX="17.0" layoutY="304.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="170.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="30.0" layoutY="304.0" prefHeight="67.0" prefWidth="126.0" text="Currently:">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="189.0" layoutX="504.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="170.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="emptyBoxOutput" layoutX="29.0" layoutY="332.0" prefHeight="67.0" prefWidth="147.0" text="10 Boxes">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="cheatingOutput" layoutX="317.0" layoutY="332.0" prefHeight="67.0" prefWidth="147.0" text="On">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="304.0" prefHeight="67.0" prefWidth="126.0" text="Currently:">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="solveInput" layoutX="338.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#solve" text="Solve Now">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="reloadInput" layoutX="150.0" layoutY="471.0" mnemonicParsing="false" onMouseClicked="#reload" text="New Puzzle">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="hintInput" layoutX="50.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#hint" text="Hint">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="warningOutput" layoutX="10.0" layoutY="575.0" prefHeight="67.0" prefWidth="464.0" textFill="RED">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="201.0" layoutX="504.0" layoutY="156.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="170.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="67.0" layoutX="506.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="170.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.812807881773399">
+               <stops>
+                  <Stop color="#bf800053" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="531.0" layoutY="66.0" prefHeight="67.0" prefWidth="185.0" text="Controls">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="148.0" prefHeight="67.0" prefWidth="126.0" text="Click to select box">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="182.0" prefHeight="67.0" prefWidth="126.0" text="Type in numbers">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="216.0" prefHeight="67.0" prefWidth="153.0" text="BACKSPACE: removes">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="249.0" prefHeight="67.0" prefWidth="126.0" text="N: toggles notes">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="434.0" prefHeight="67.0" prefWidth="126.0" text="P: makes">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="449.0" prefHeight="67.0" prefWidth="155.0" text="tiles permanent">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="462.0" prefHeight="67.0" prefWidth="153.0" text="for custom puzzle">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="385.0" prefHeight="67.0" prefWidth="147.0" text="To make you own ">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="398.0" prefHeight="67.0" prefWidth="147.0" text="puzzle make all 81">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="412.0" prefHeight="67.0" prefWidth="147.0" text="spaces blank.">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="283.0" prefHeight="67.0" prefWidth="155.0" text="Turns green when solved">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="489.0" prefHeight="67.0" prefWidth="153.0" text="Cheating won't work on">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="502.0" prefHeight="67.0" prefWidth="153.0" text="custom puzzles.">
+         <font>
+            <Font name="Javanese Text" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
